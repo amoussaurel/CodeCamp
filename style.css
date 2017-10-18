@@ -1,40 +1,210 @@
 body {
-    background-color: #ECA0E7;
+        background-image: url(images/zikpaper.jpg);
 }
 
-body {margin: 0;}
 
-ul.topnav {
+.recherche {
+float : right;
+clear: right;
+
+}
+
+
+                        /*GESTION DES FLEXBOX */
+
+
+.container{
+  height:100vh;
+
+  display:flex;
+  flex-direction:column;
+}
+
+.item{
+  font-size:2em;
+  margin:5px;
+  padding:5px;
+  border:solid 2px black;
+  text-align:center;
+}
+
+.header{
+
+  /*background-image: url(images/zikpaper.jpg);
+  background-position: center;*/
+}
+
+.flexbody{
+  flex:1; /*cet élément va occuper toute la place disponible sur l'axe vertial*/
+  display:flex; /*les éléments contenus dans celui-ci s'afficheront en ligne*/
+  flex-direction:row; /*valeur par défaut*/
+}
+
+.menuLeft{
+
+}
+
+.content{
+
+  flex:1; /*cet élément va occuper tout l'espace disponible sur l'axe horizontal*/
+}
+
+.footer{
+ background-color:#FF00FF;
+   height:300px;
+}
+
+
+
+
+
+/*margin codepen*/
+
+                            /*FIN GESTION DES FLEXBOX */
+
+body{
+  margin:0;
+}
+
+
+
+ul.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+  box-shadow: 2px 2px 3px #222222 ;
+    float : left;
 }
 
-ul.topnav li {float: left;}
 
-ul.topnav li a {
+
+
+
+
+ul.menu li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
+    margin : auto;
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.menu li a:hover:not(.active) {background-color: deepskyblue;}
 
-ul.topnav li a.active {background-color: purple;}
+ul.menu li a.active {background-color: purple;}
 
-ul.topnav li.right {float: right;}
+ul.menu li.right {float: right;}
 
 @media screen and (max-width: 600px){
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
+    ul.menu li.right,
+    ul.menu li {float: none;}
 }
 
 h1 {
   text-align: center;
   font-size: 4em;
-  color: #880009;
+  color: darkslategrey;
 }
+
+.sidebar .recherche {
+    float : right;
+  margin: 0;
+  padding: 20px 16px 20px 30px;
+}
+
+#playlist
+{
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 15%;
+}
+
+
+
+
+
+
+
+
+/*bouton vote
+
+
+$red: #881d12 ;
+
+
+@mixin bump {
+    0%      {transform: scale(1); }
+    50%     {transform: scale(1.5); }
+    100%    {transform: scale(1); }
+}
+
+@keyframes bump1 { @include bump; }
+@keyframes bump2 {@include bump;}
+
+
+
+
+.vote-count {
+  width:40px;
+  height:35px;
+  text-align:center;
+  color:$red;
+  font:20px/1.5 georgia;
+  margin-bottom:10px;
+  animation: bump .3s;
+  &.bumped {
+    animation: bump2 .3s;
+  }
+}
+
+.vote-btn {
+  appearance:none;
+  border-radius:3px;
+  border:0;
+  background:#fff;
+  padding:15px 12px 15px 40px;
+  font:bold 9px/1.2 arial;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:$red;
+  box-shadow:0 1px 1px rgba(0,0,0,.2);
+  outline:none;
+  position:relative;
+  transition: all .3s ease-out;
+  cursor:pointer;
+  overflow:hidden;
+
+ .icon {
+        position:absolute;
+    content: “”;
+    left:10px;
+    top:10px;
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    display:inline-block;
+    background:$red url(https://jamesmuspratt.com/codepen/img/checkmark.svg) no-repeat 2px 1px;
+    background-size:16px auto;
+  transition: all .3s ease-out;
+
+ }
+
+}
+
+
+.vote-btn.complete {
+  padding-left:15px;
+  background:#c1c0bb ;
+  color: #fff;
+  .icon {
+    opacity:0;
+    /* transform: rotateX(90deg); */
+      transform: scale(0);
+ }
+}*/
