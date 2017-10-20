@@ -1,5 +1,5 @@
 body {
-        background-image: url(images/blue.png);
+        background-image: url(images/zikpaper.jpg);
         background-position: center;
 }
 
@@ -10,12 +10,7 @@ clear: right;
 
 }
 
-.logo {
-float : left;
-clear: left;
-margin: 0;
 
-}
                         /*GESTION DES FLEXBOX */
 
 
@@ -37,6 +32,7 @@ margin: 0;
   font-size:2em;
   margin:5px;
   padding:5px;
+  border:solid 2px black;
   text-align:center;
 }
 
@@ -44,7 +40,7 @@ margin: 0;
   font-size:2em;
   margin:5px;
   padding:5px;
-
+  border:solid 2px black;
   text-align:center;
 }
 
@@ -52,7 +48,6 @@ margin: 0;
 
   background-image: url(images/gold.png);
   background-position: center;
-   margin: : 10px;
 }
 
 .header2{
@@ -66,8 +61,7 @@ margin: 0;
   color: white;
   margin:5px;
   padding:5px;
-  background-color: #AC820E;
-  opacity: 0.8;
+  background-color: #333;
   text-align:center;
 }
 
@@ -75,7 +69,6 @@ margin: 0;
   flex:1; /*cet élément va occuper toute la place disponible sur l'axe vertial*/
   display:flex; /*les éléments contenus dans celui-ci s'afficheront en ligne*/
   flex-direction:row; /*valeur par défaut*/
-
 }
 
 .flexbody2{
@@ -91,25 +84,23 @@ margin: 0;
 
 }
 
-.content {
+.content{
 
   flex:1; /*cet élément va occuper tout l'espace disponible sur l'axe horizontal*/
-  background-image: url(images/blue.jpg);
-  opacity: 0.7;
+  background-image: url(images/madonna.png);
   background-position: center;
 }
 
 .content2{
 
   flex:1; /*cet élément va occuper tout l'espace disponible sur l'axe horizontal*/
-  background-image: url(images/zikman.png);
-  background-position: center;
+
 }
 
 
 
 .footer{
-border-color: black;
+ background-color:#97845F;
    padding: :30px;
 }
 
@@ -132,8 +123,8 @@ ul.menu {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #AC820E;
-  box-shadow: 2px 2px 3px black ;
+    background-color: #333;
+  box-shadow: 2px 2px 3px #222222 ;
     float : left;
 }
 
@@ -151,7 +142,7 @@ ul.menu li a {
     text-decoration: none;
 }
 
-ul.menu li a:hover:not(.active) {background-color: black;}
+ul.menu li a:hover:not(.active) {background-color: #A98200;}
 
 ul.menu li a.active {background-color: purple;}
 
@@ -164,7 +155,7 @@ ul.menu li.right {float: right;}
 
 h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 4em;
   font-family: 'Amaranth';
   color: #333;
 }
