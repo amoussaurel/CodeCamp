@@ -20,18 +20,18 @@ $(document).ready(function() {
 
 $.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/TopList%20Musicall%20OldSchool?api_key=keygXbTJs6OHQIT6C",
 					function(data) {
-					console.log(data);
-					$.each(data.records, function(key,val){
-					console.log(val.fields.likes);
+
+						console.log(data);
+						$.each(data.records, function(key,val){
+							console.log(val.fields.likes);
 
 					$('<li>'+val.fields.likes+'<input type = "button" value ="Vote +1" id="bouton">'+'</li>').appendTo('#oldmusiques');
 
 					$("<iframe src='https://open.spotify.com/embed?uri="+val.fields['spotify-link']+"&view=coverart' frameborder='0' allowtransparency='true'></iframe>").appendTo('#oldmusiques');
-					});
+				});
 
-
-					}
-);
+			}
+		);
 
 $.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/Scott%20Songs?api_key=keygXbTJs6OHQIT6C",
 					function(data) {
@@ -43,10 +43,10 @@ $.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/Scott%20Songs?api_key=k
                 $('<li>'+val.fields.title+'</li>').appendTo('#scottmusiques');
 
                 $("<iframe src='https://open.spotify.com/embed?uri="+val.fields['spotify-link']+"&view=coverart' frameborder='0' allowtransparency='true'></iframe>").appendTo('#scottmusiques');
-            });
+							});
 
-					}
-);
+						}
+					);
 
 $.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/Lopez?api_key=keygXbTJs6OHQIT6C",
 					function(data) {
@@ -58,10 +58,41 @@ $.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/Lopez?api_key=keygXbTJs
                 $('<li>'+val.fields.title+'</li>').appendTo('#lopezmusiques');
 
                 $("<iframe src='https://open.spotify.com/embed?uri="+val.fields['spotify-link']+"&view=coverart' frameborder='0' allowtransparency='true'></iframe>").appendTo('#lopezmusiques');
-            });
+							});
 
-					}
-);
+						}
+					);
+
+$.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/Booba?api_key=keygXbTJs6OHQIT6C",
+										function(data) {
+
+					          	console.log(data);
+					            $.each(data.records, function(key,val){
+					              	console.log(val.fields.title);
+
+					                $('<li>'+val.fields.title+'</li>').appendTo('#boobamusiques');
+
+					                $("<iframe src='https://open.spotify.com/embed?uri="+val.fields['spotify-link']+"&view=coverart' frameborder='0' allowtransparency='true'></iframe>").appendTo('#boobamusiques');
+												});
+
+											}
+										);
+
+$.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/Madonna?api_key=keygXbTJs6OHQIT6C",
+								function(data) {
+
+										          	console.log(data);
+										            $.each(data.records, function(key,val){
+										              	console.log(val.fields.title);
+
+										                $('<li>'+val.fields.title+'</li>').appendTo('#madonnamusiques');
+
+										                $("<iframe src='https://open.spotify.com/embed?uri="+val.fields['spotify-link']+"&view=coverart' frameborder='0' allowtransparency='true'></iframe>").appendTo('#madonnamusiques');
+										            });
+
+															}
+														);
+
 
 $.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/Alpha?api_key=keygXbTJs6OHQIT6C",
 					function(data) {
@@ -76,10 +107,27 @@ $.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/Alpha?api_key=keygXbTJs
             });
 
 					}
-);
+				);
+
+
+				$.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/Beyonce?api_key=keygXbTJs6OHQIT6C",
+									function(data) {
+
+				          	console.log(data);
+				            $.each(data.records, function(key,val){
+				              	console.log(val.fields.title);
+
+				                $('<li>'+val.fields.title+'</li>').appendTo('#beyoncemusiques');
+
+				                $("<iframe src='https://open.spotify.com/embed?uri="+val.fields['spotify-link']+"&view=coverart' frameborder='0' allowtransparency='true'></iframe>").appendTo('#beyoncemusiques');
+				            });
+
+									}
+								);
 
 $.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/TopList%20Musicall?api_key=keygXbTJs6OHQIT6C",
-                    function(data) {
+          function(data) {
+
               console.log(data);
             $.each(data.records, function(key,val){
                   console.log(val.fields.likes);
@@ -87,10 +135,9 @@ $.getJSON("https://api.airtable.com/v0/appmmDV7S4fYyGaJe/TopList%20Musicall?api_
                $('<li>'+val.fields.likes+'<input type = "button" value ="Vote +1" id="bouton">'+'</li>').appendTo('#musiques');
 
                $("<iframe src='https://open.spotify.com/embed?uri="+val.fields['spotify-link']+"&view=coverart' frameborder='0' allowtransparency='true'></iframe>").appendTo('#musiques');
-            });
+						 });
 
-
-                    }
-);
+ 					}
+ 				);
 
 });
